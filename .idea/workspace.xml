@@ -261,7 +261,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.T04_Disorder">
+  <component name="RunManager" selected="Application.T009_WayToRun">
     <configuration name="LambdaGC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mashibing.jvm.c5_gc.LambdaGC" />
       <module name="JVM" />
@@ -282,6 +282,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.mashibing.jvm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="T009_WayToRun" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mashibing.jvm.c2_classloader.T009_WayToRun" />
+      <module name="JVM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mashibing.jvm.c2_classloader.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -316,19 +329,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mashibing.jvm.c0_basic.TT" />
-      <module name="JVM" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mashibing.jvm.c0_basic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestTLAB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mashibing.jvm.c5_gc.TestTLAB" />
       <module name="JVM" />
@@ -348,16 +348,16 @@
       <item itemvalue="Application.LambdaGC" />
       <item itemvalue="Application.StackOverFlow" />
       <item itemvalue="Application.T04_Disorder" />
-      <item itemvalue="Application.TT" />
       <item itemvalue="Application.TestTLAB" />
+      <item itemvalue="Application.T009_WayToRun" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.T009_WayToRun" />
         <item itemvalue="Application.T04_Disorder" />
         <item itemvalue="Application.StackOverFlow" />
         <item itemvalue="Application.LambdaGC" />
         <item itemvalue="Application.TestTLAB" />
-        <item itemvalue="Application.TT" />
       </list>
     </recent_temporary>
   </component>
