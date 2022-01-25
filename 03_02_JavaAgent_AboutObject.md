@@ -1,13 +1,33 @@
 # 使用JavaAgent测试Object的大小
 
-作者：马士兵 http://www.mashibing.com
+一.对象创建过程
+1.class loading
+2.class linking(verification,preparation,resolution)
+3.class initializing
+4.申请对象内存
+5.成员变量赋默认值
+6.调用构造方法<init>
+成员变量顺序赋初始值
+执行构造方法语句
+ 
+
 
 ## 对象大小（64位机）
-
-### 观察虚拟机配置
+二.对象在内存中的存储布局
+普通对象：markword classPointer instance padding
+数组：markword classPointer instance padding 数组长度
+详解
+### 先观察虚拟机配置
 
 java -XX:+PrintCommandLineFlags -version
-
+输出
+-XX:InitialHeapSize=267012928 
+-XX:MaxHeapSize=4272206848 
+-XX:+PrintCommandLineFlags 
+-XX:+UseCompressedClassPointers 
+-XX:+UseCompressedOops 
+-XX:-UseLargePagesIndividualAllocation 
+-XX:+UseParallelGC
 ### 普通对象
 
 1. 对象头：markword  8
