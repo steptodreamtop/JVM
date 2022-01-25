@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="96329429-90d8-4757-a4a3-7fdc61dce21a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03_02_JavaAgent_AboutObject.md" beforeDir="false" afterPath="$PROJECT_DIR$/03_02_JavaAgent_AboutObject.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JVM/com/mashibing/jvm/c0_basic/TestIndentityHashCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JVM/com/mashibing/jvm/c0_basic/TestIndentityHashCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JVM/com/mashibing/jvm/c2_classloader/T008_LazyLoading.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JVM/com/mashibing/jvm/c2_classloader/T008_LazyLoading.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JVM/com/mashibing/jvm/c2_classloader/T009_WayToRun.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JVM/com/mashibing/jvm/c2_classloader/T009_WayToRun.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JVM/com/mashibing/jvm/c2_classloader/T010_Parent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JVM/com/mashibing/jvm/c2_classloader/T010_Parent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JVM/com/mashibing/jvm/c2_classloader/T012_ClassReloading2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JVM/com/mashibing/jvm/c2_classloader/T012_ClassReloading2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mashibing/jvm/c4_RuntimeDataAreaAndInstructionSet/TestIPulsPlus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mashibing/jvm/c4_RuntimeDataAreaAndInstructionSet/TestIPulsPlus.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +36,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/com/mashibing/jvm/c2_classloader/T010_Parent.java" root0="FORCE_HIGHLIGHTING" />
@@ -164,7 +167,7 @@
       <recent name="C:\work\ijprojects\JVM\src\com\mashibing\jvm\cms" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.T009_WayToRun">
+  <component name="RunManager" selected="Application.TestIPulsPlus">
     <configuration name="LambdaGC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mashibing.jvm.c5_gc.LambdaGC" />
       <module name="JVM" />
@@ -232,13 +235,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestTLAB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mashibing.jvm.c5_gc.TestTLAB" />
+    <configuration name="TestIPulsPlus" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mashibing.jvm.c4_RuntimeDataAreaAndInstructionSet.TestIPulsPlus" />
       <module name="JVM" />
-      <option name="VM_PARAMETERS" value="-XX:-DoEscapeAnalysis -XX:-EliminateAllocations -XX:-UseTLAB" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mashibing.jvm.c5_gc.*" />
+          <option name="PATTERN" value="com.mashibing.jvm.c4_RuntimeDataAreaAndInstructionSet.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -251,16 +253,16 @@
       <item itemvalue="Application.LambdaGC" />
       <item itemvalue="Application.StackOverFlow" />
       <item itemvalue="Application.T04_Disorder" />
-      <item itemvalue="Application.TestTLAB" />
       <item itemvalue="Application.T009_WayToRun" />
+      <item itemvalue="Application.TestIPulsPlus" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestIPulsPlus" />
         <item itemvalue="Application.T009_WayToRun" />
         <item itemvalue="Application.T04_Disorder" />
         <item itemvalue="Application.StackOverFlow" />
         <item itemvalue="Application.LambdaGC" />
-        <item itemvalue="Application.TestTLAB" />
       </list>
     </recent_temporary>
   </component>
@@ -276,7 +278,7 @@
       <option name="presentableId" value="Default" />
       <updated>1561013618757</updated>
       <workItem from="1642841657836" duration="6993000" />
-      <workItem from="1643069896783" duration="1380000" />
+      <workItem from="1643069896783" duration="3635000" />
     </task>
     <task id="LOCAL-00001" summary="更新markdown资料与图片">
       <created>1572139204079</created>
@@ -348,7 +350,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642841737306</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="项目提交">
+      <created>1643071383534</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1643071383534</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
